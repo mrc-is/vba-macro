@@ -1,0 +1,11 @@
+Sub WinXplorer()
+Shell "Explorer.exe", vbNormalFocus
+End Sub
+
+
+
+Sub CreateFromTemplate()
+Dim MyItem As Outlook.MailItem
+Set MyItem = Application.CreateItemFromTemplate("C:\Users\SAIFUL\Desktop\template.msg")
+MyItem.Display
+End Sub
